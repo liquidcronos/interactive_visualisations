@@ -63,7 +63,7 @@ func process_forward_force(master_position):
 func process_homing(master_position):
 	var rel_pose = calc_relative_pos(master_position)
 	rel_pose[1]=1.2*rel_pose[1]
-	var output =polar2cartesian(rel_pose[0],rel_pose[1]).rotated(rotation)
+	var output =40*polar2cartesian(rel_pose[0],rel_pose[1]).rotated(rotation)
 	return output	
 
 func calc_relative_pos(target_pos):
