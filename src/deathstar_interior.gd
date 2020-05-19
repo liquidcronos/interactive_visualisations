@@ -18,5 +18,4 @@ func _ready():
 	
 	pass
 func _on_Button_pressed():
-	print("test")
 	get_tree().change_scene("res://src/Simulation.tscn")
